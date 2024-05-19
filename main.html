@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="logoico.ico" type="image/x-icon" />
+    <title>Rain Todo App</title>
+  </head>
+  <body>
+    <div class="todoApp">
+      <h1>Rain Todo App</h1>
+      <div class="todo">
+        <input type="text" class="todoInput" placeholder="Yapılacak iş ekle" />
+        <button class="addBtn"><i class="bi bi-plus-circle"></i>Ekle</button>
+      </div>
+      <div class="select">
+        <select name="todos" class="filterTodo" id="">
+          <option value="all">Tümü</option>
+          <option value="completed">Tamamlananlar</option>
+          <option value="uncompleted">Tamamlanmayanlar</option>
+        </select>
+      </div>
+      <ul class="todoList"></ul>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  </body>
+</html>

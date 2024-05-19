@@ -1,0 +1,161 @@
+body {
+  background-color: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 100px 0;
+}
+
+.todoApp {
+  padding: 80px 80px 80px 80px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(81, 81, 248);
+  display: flex;
+  flex-direction: column;
+}
+.todo {
+  display: flex;
+  align-items: center;
+}
+.todoInput {
+  width: 300px;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  border: 1px solid rgb(180, 177, 177);
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.todoInput:focus {
+  background-color: skyblue;
+  border: none;
+}
+.todoInput:focus::placeholder {
+  color: white;
+}
+.todoInput:hover {
+  background-color: skyblue;
+  border: none;
+}
+.todoInput:hover::placeholder {
+  color: white;
+}
+
+.addBtn {
+  height: 50px;
+  width: 100px;
+  background-color: #2ecc71;
+  border: none;
+  outline: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.addBtn:hover {
+  background-color: #27ae60;
+}
+
+.deleteBtn {
+  padding: 10px 10px 10px 10px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.bi-trash3,
+.bi-check-circle {
+  pointer-events: none;
+}
+.checkBtn {
+  padding: 10px 10px 10px 10px;
+  background-color: #055388;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.TodoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 600;
+  font-family: sans-serif;
+  background-color: rgb(43, 167, 216);
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  transition: 0.5s all ease;
+}
+.todoList {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(360deg);
+  opacity: 0;
+}
+
+.completed{
+  background-color: rgb(12, 53, 70);
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.select {
+	position: relative;
+  margin-top: 10px;
+}
+
+.select select {
+	appearance: none;
+	-webkit-appearance: none;
+  width: 100%;
+	font-size: 16px;
+	font-style: italic;
+	padding: 12px 18px 12px 18px;
+	background-color: #FF6229;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0px 0px 7px 2px #9E642B;
+}
+
+.select select:focus {
+	background: #F26D59;
+	border: 3px solid #C75D5D;
+	border-radius: 4px;
+}
+
+.select::after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	right: 21px;
+	transform: translate(0, -50%);
+	width: 21px;
+	height: 21px;
+	background-color: #FFFFFF;
+	clip-path: polygon(50% 80%, 0 20%, 100% 20%);
+}
+
